@@ -2,8 +2,8 @@
 Took the Enet UDP networking lib and turned it into a single header library, similar to the STB libs.
 
 ## Instructions 
-- Put "enet_single.h" into your project's source hierarchy, and include it.
-- Define ENET_IMPLEMENTATION to get the function definitions
+- Include "enet_single.h" in a header where needed
+- `#define ENET_IMPLEMENTATION` and `#include "enet_single.h"` in a c/cpp file to get the function definitions
 
 For Windows:
 - Link with ws2_32.lib & winmm.lib
